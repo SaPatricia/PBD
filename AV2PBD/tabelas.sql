@@ -33,7 +33,6 @@ CREATE TABLE RESERVA (
     data_fim VARCHAR(50) NOT NULL,
     dias_aluguel INT NOT NULL,
     data_reserva DATE NOT NULL,
-    valor_diaria FLOAT NOT NULL,
     status_reserva VARCHAR(20) NOT NULL,
     FOREIGN KEY (id_cliente) REFERENCES CLIENTE(id_cliente),
     FOREIGN KEY (id_vaga) REFERENCES VAGA(id_vaga)
